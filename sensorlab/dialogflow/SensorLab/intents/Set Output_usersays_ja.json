@@ -1,0 +1,46 @@
+[
+  {
+    "id": "b009e317-5405-4c76-9d16-fc0c840efee7",
+    "data": [
+      {
+        "text": "リレー",
+        "alias": "outdevice",
+        "meta": "@outdevice",
+        "userDefined": false
+      },
+      {
+        "text": "オンにして",
+        "alias": "outcommand",
+        "meta": "@outcommand",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522743173
+  },
+  {
+    "id": "29785c95-85ca-4b69-8f0b-a6ea19b318ff",
+    "data": [
+      {
+        "text": "リレー",
+        "alias": "outdevice",
+        "meta": "@outdevice",
+        "userDefined": false
+      },
+      {
+        "text": "を",
+        "userDefined": false
+      },
+      {
+        "text": "オンにして",
+        "alias": "outcommand",
+        "meta": "@outcommand",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522743173
+  }
+]

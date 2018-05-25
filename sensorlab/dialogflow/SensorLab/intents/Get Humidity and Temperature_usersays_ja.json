@@ -1,0 +1,70 @@
+[
+  {
+    "id": "01502d8c-4a0a-4e5a-a354-cb584cb766d1",
+    "data": [
+      {
+        "text": "温湿度センサー",
+        "alias": "humitemp",
+        "meta": "@humitemp",
+        "userDefined": false
+      },
+      {
+        "text": "の記録",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740339
+  },
+  {
+    "id": "5f304c14-d1b8-4d2e-a550-98ba84442917",
+    "data": [
+      {
+        "text": "温湿度センサー",
+        "alias": "humitemp",
+        "meta": "@humitemp",
+        "userDefined": false
+      },
+      {
+        "text": "の状態",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740339
+  },
+  {
+    "id": "deaa0f69-0d36-457c-94b5-49bdcf06c7db",
+    "data": [
+      {
+        "text": "温湿度センサー",
+        "alias": "humitemp",
+        "meta": "@humitemp",
+        "userDefined": false
+      },
+      {
+        "text": "をおしえて",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740339
+  },
+  {
+    "id": "adfd813a-ec5f-4f1e-aff3-516478bf5879",
+    "data": [
+      {
+        "text": "温湿度センサー",
+        "alias": "humitemp",
+        "meta": "@humitemp",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740339
+  }
+]

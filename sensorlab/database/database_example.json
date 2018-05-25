@@ -1,0 +1,22 @@
+{
+  "sensorlab": {
+    "accel": {
+      "timestamp": "2018-04-01 00:01:16.411251"
+    },
+    "dht": {
+      "humidity": 65,
+      "temperature": 23,
+      "timestamp": "2018-04-01 00:08:00.576000"
+    },
+    "moisture": {
+      "timestamp": "2018-04-01 00:08:00.583000",
+      "value": 243
+    },
+    "pir": {
+      "timestamp": "2018-04-01 00:00:27.077580"
+    },
+    "relay": {
+      "state": 0
+    }
+  }
+}

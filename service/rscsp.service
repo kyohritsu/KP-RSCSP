@@ -1,0 +1,14 @@
+[Unit]
+Description=Status monitor and program launcher service using KP-RSCSP board
+After=
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/KP-RSCSP/service/rscsp_launcher.py
+WorkingDirectory=/home/pi
+KillMode=process
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

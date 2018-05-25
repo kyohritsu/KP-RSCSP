@@ -1,0 +1,59 @@
+{
+  "description": "",
+  "language": "ja",
+  "disableInteractionLogs": false,
+  "googleAssistant": {
+    "googleAssistantCompatible": true,
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [
+      {
+        "intentId": "05bb0afe-5485-4df2-bf92-6ae199042cfb",
+        "signInRequired": false
+      },
+      {
+        "intentId": "8e7d4c71-108f-4f86-bc2e-18dcba2f2fb8",
+        "signInRequired": false
+      },
+      {
+        "intentId": "95175732-d3e4-437b-a3b7-f461cbb3aa6d",
+        "signInRequired": false
+      },
+      {
+        "intentId": "b6a0e08c-7778-4ecc-b85b-873703e3be06",
+        "signInRequired": false
+      },
+      {
+        "intentId": "fbbc6d33-f437-4e4c-9e97-14730f9b9a9a",
+        "signInRequired": false
+      }
+    ],
+    "systemIntents": [],
+    "endIntentIds": [
+      "15ee5d18-bcde-48b8-ad90-cab56d53837a"
+    ],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "MALE_1",
+    "capabilities": [],
+    "protocolVersion": "V2",
+    "autoPreviewEnabled": true
+  },
+  "defaultTimezone": "Asia/Tokyo",
+  "webhook": {
+    "url": "https://us-central1-yourprojectid.cloudfunctions.net/fulfillment",
+    "headers": {
+      "": ""
+    },
+    "available": true,
+    "useForDomains": true,
+    "cloudFunctionsEnabled": false,
+    "cloudFunctionsInitialized": false
+  },
+  "isPrivate": true,
+  "customClassifierMode": "use.after",
+  "mlMinConfidence": 0.3,
+  "supportedLanguages": [],
+  "onePlatformApiVersion": "v1legacy"
+}

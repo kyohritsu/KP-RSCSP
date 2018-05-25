@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ceadae21-57d8-4d2e-878e-86b7f6dab446",
+    "data": [
+      {
+        "text": "土",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "は乾いてない？",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740497
+  },
+  {
+    "id": "d5de1bfb-2e83-4192-870e-0ec2bff8d6f5",
+    "data": [
+      {
+        "text": "水分センサー",
+        "alias": "moisture",
+        "meta": "@moisture",
+        "userDefined": true
+      },
+      {
+        "text": "の記録",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740486
+  },
+  {
+    "id": "84b15972-eccb-4523-ae90-65c787b0d74d",
+    "data": [
+      {
+        "text": "水分センサー",
+        "alias": "moisture",
+        "meta": "@moisture",
+        "userDefined": true
+      },
+      {
+        "text": "の状態",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740486
+  },
+  {
+    "id": "da9d7ad0-b5c5-44f6-858e-5557c654ecb3",
+    "data": [
+      {
+        "text": "水分センサー",
+        "alias": "moisture",
+        "meta": "@moisture",
+        "userDefined": true
+      },
+      {
+        "text": "をおしえて",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740486
+  },
+  {
+    "id": "6063dc8e-87ef-4212-8b37-1a2bb5bf79fc",
+    "data": [
+      {
+        "text": "水分センサー",
+        "alias": "moisture",
+        "meta": "@moisture",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740486
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "id": "95175732-d3e4-437b-a3b7-f461cbb3aa6d",
+  "name": "Get Humidity and Temperature",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "action.humitemp",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ba3d7469-5bf0-47f1-98d5-9bc57149081b",
+          "required": false,
+          "dataType": "@humitemp",
+          "name": "humitemp",
+          "value": "$humitemp",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ja",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1522740411,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "fbbc6d33-f437-4e4c-9e97-14730f9b9a9a",
+  "name": "Get Accelerometer event",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "action.accel",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ee5f1c8c-133a-4f54-b934-afb34e86bef7",
+          "dataType": "@accel",
+          "name": "accel",
+          "value": "$accel",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ja",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1522740269,
+  "fallbackIntent": false,
+  "events": []
+}

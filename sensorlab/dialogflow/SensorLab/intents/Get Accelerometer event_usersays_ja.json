@@ -1,0 +1,70 @@
+[
+  {
+    "id": "5e563ebf-0d44-46ef-80d2-ed63a17c552c",
+    "data": [
+      {
+        "text": "加速度センサー",
+        "alias": "accel",
+        "meta": "@accel",
+        "userDefined": false
+      },
+      {
+        "text": "の記録",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740269
+  },
+  {
+    "id": "661fb84a-6fb8-46f0-8f45-774045c8b4dd",
+    "data": [
+      {
+        "text": "加速度センサー",
+        "alias": "accel",
+        "meta": "@accel",
+        "userDefined": false
+      },
+      {
+        "text": "の状態",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740269
+  },
+  {
+    "id": "d01c1ce3-21e9-414b-8355-e0fa86a9d5fd",
+    "data": [
+      {
+        "text": "加速度センサー",
+        "alias": "accel",
+        "meta": "@accel",
+        "userDefined": false
+      },
+      {
+        "text": "をおしえて",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740269
+  },
+  {
+    "id": "e60a3ba1-1bbf-4997-be81-74ac32d4088d",
+    "data": [
+      {
+        "text": "加速度センサー",
+        "alias": "accel",
+        "meta": "@accel",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740269
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "b6a0e08c-7778-4ecc-b85b-873703e3be06",
+  "name": "Get PIR Sensor event",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "action.pir",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "82dbfac1-3d57-4606-8246-3f6a60d75052",
+          "dataType": "@pir",
+          "name": "pir",
+          "value": "$pir",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ja",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1522740389,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "05bb0afe-5485-4df2-bf92-6ae199042cfb",
+  "name": "Get Soil Moisture",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "action.moisture",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "31e2fb43-e4a4-4785-8202-2cb4abfcb82d",
+          "required": false,
+          "dataType": "@moisture",
+          "name": "moisture",
+          "value": "$moisture",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ja",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1522740497,
+  "fallbackIntent": false,
+  "events": []
+}

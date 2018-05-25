@@ -1,0 +1,82 @@
+[
+  {
+    "id": "5f585263-aa29-4a0b-a43c-6036cb53864b",
+    "data": [
+      {
+        "text": "あやしい人を見なかった？",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740389
+  },
+  {
+    "id": "91dc6ea8-9647-4297-9678-b7f950e99f97",
+    "data": [
+      {
+        "text": "人感センサー",
+        "alias": "pir",
+        "meta": "@pir",
+        "userDefined": false
+      },
+      {
+        "text": "の記録",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740389
+  },
+  {
+    "id": "10421150-3fbb-42e8-af1e-3287ac1d84c8",
+    "data": [
+      {
+        "text": "人感センサー",
+        "alias": "pir",
+        "meta": "@pir",
+        "userDefined": false
+      },
+      {
+        "text": "の状態",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740389
+  },
+  {
+    "id": "18f9552d-cdc5-4d12-8f18-88c7919a080d",
+    "data": [
+      {
+        "text": "人感センサー",
+        "alias": "pir",
+        "meta": "@pir",
+        "userDefined": false
+      },
+      {
+        "text": "をおしえて",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740389
+  },
+  {
+    "id": "01185a62-8123-4797-a180-03d4a4adefdc",
+    "data": [
+      {
+        "text": "人感センサー",
+        "alias": "pir",
+        "meta": "@pir",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522740389
+  }
+]

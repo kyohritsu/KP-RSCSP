@@ -1,0 +1,58 @@
+{
+  "id": "8e7d4c71-108f-4f86-bc2e-18dcba2f2fb8",
+  "name": "Set Output",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "action.output",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4b1eae49-c07e-4e38-a3b1-4e4d8ff2673e",
+          "required": true,
+          "dataType": "@outdevice",
+          "name": "outdevice",
+          "value": "$outdevice",
+          "prompts": [
+            {
+              "lang": "ja",
+              "value": "どの出力を操作しますか？"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "f348735a-07f3-4947-abe0-9f3dc0253cce",
+          "required": true,
+          "dataType": "@outcommand",
+          "name": "outcommand",
+          "value": "$outcommand",
+          "prompts": [
+            {
+              "lang": "ja",
+              "value": "出力をどのように操作しますか？ オン、オフ、トグルから選んでください。"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ja",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1522743173,
+  "fallbackIntent": false,
+  "events": []
+}

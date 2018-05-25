@@ -1,0 +1,38 @@
+[
+  {
+    "id": "16e1a9e3-66e3-427d-a602-41de2724ca97",
+    "data": [
+      {
+        "text": "さよなら",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522743220
+  },
+  {
+    "id": "0c21a130-e3b7-4308-8165-ad99af36d000",
+    "data": [
+      {
+        "text": "おわり",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522743220
+  },
+  {
+    "id": "a27e795f-364b-4f6a-976f-bce7c1160308",
+    "data": [
+      {
+        "text": "終了",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1522743220
+  }
+]
