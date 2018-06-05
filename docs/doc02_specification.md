@@ -86,14 +86,14 @@ Firebase は、Google アシスタントプログラムと連携可能なサー�
 
   1. **アシスタントアプリ**  
      Google Assistant対応機器を使って自然言語による会話を行うアプリを、[Actions on Google](https://console.actions.google.com/) で作成します。
-      - **[会話](https://github.com/kyohritsu/KP-RSCSP/tree/master/assistant_app/dialogflow)** `assistant_app/dialogflow/`  
+      - **[会話](https://github.com/kyohritsu/KP-RSCSP/tree/master/sensorlab/dialogflow)** `sensorlab/dialogflow/`  
        [Dialogflow](https://console.dialogflow.com/) を利用して構築します。
-      - **[フルフィルメント](https://github.com/kyohritsu/KP-RSCSP/tree/master/assistant_app/fulfillment)** `assistant_app/fulfillment/`  
+      - **[フルフィルメント](https://github.com/kyohritsu/KP-RSCSP/tree/master/sensorlab/fulfillment)** `sensorlab/fulfillment/`  
         センサー状態確認や出力の操作に関わる会話がトリガーされた時に呼び出され、データベースにアクセスし、応答を生成するための外部配置プログラムです。  
         Googleの提供する [Firebase](https://console.firebase.google.com/?hl=ja) サービス群のひとつである、Firebase Functions を使用します。  
-  1. **[ローカルスクリプト](https://github.com/kyohritsu/KP-RSCSP/tree/master/local_script)** `local_script/`  
+  1. **[ローカルスクリプト](https://github.com/kyohritsu/KP-RSCSP/tree/master/sensorlab/local_script)** `sensorlab/local_script/`  
      手持ちのRaspberry Pi + KP-RSCSP基板 + Groveモジュールで動作し、計測した各種センサー状態のデータベースへの送信や、出力装置の現在状態が変化した際に装置の制御を行うスクリプトです。今回は、Pythonで記述します。
-  1. **[データベース](https://github.com/kyohritsu/KP-RSCSP/tree/master/database)** `database/`  
+  1. **[データベース](https://github.com/kyohritsu/KP-RSCSP/tree/master/sensorlab/database)** `sensorlab/database/`  
     アシスタントアプリの会話とローカル環境下の入出力モジュールを連動させるために、現在状態をデータベースにて管理し、フルフィルメント・ローカルスクリプト両者から参照と更新をします。  
     使用するデータベースは、同じくFirebaseサービス群より Firebase Realtime Database を使用します。
 
