@@ -161,7 +161,7 @@ Firebaseでプロジェクトを初めて開く際は、利用規約の同意が
 
 ```python
 # ウェブ API キー
-WEB_API_KEY = 'AIzaSyAUD7maqXOG-e99JqCgr3lXyBFyUqYqQfg'
+WEB_API_KEY = 'AIza***********************************'
 # プロジェクト ID
 PROJECT_ID = 'yourproject-1e84f'
 # 秘密鍵 JSON ファイルへのパス
@@ -183,7 +183,7 @@ PATH_TO_CREDENTIAL_JSON = '/home/pi/path/to/credential.json'
 | CN7 | D0 | デジタル温湿度センサー ([Grove - Temperature & Humidity Sensor](http://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/)) |
 | CN8 | D2 | リレー ([Grove - Relay](http://wiki.seeedstudio.com/Grove-Relay/)) |
 
-【★ここに製品基板・モジュールコネクタ名の文字入れ写真を挿入】
+![モジュール接続図](https://raw.githubusercontent.com/kyohritsu/KP-RSCSP/master/docs/assets/modules.jpg)
 
 ## ローカルスクリプトの実行
 

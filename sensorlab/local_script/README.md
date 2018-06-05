@@ -12,7 +12,7 @@
 
 ```python
 # ウェブ API キー
-WEB_API_KEY = 'AIzaSyAUD7maqXOG-e99JqCgr3lXyBFyUqYqQfg'
+WEB_API_KEY = 'AIza***********************************'
 # プロジェクト ID
 PROJECT_ID = 'yourproject-1e84f'
 # 秘密鍵 JSON ファイルへのパス
