@@ -1,6 +1,6 @@
 # アシスタントアプリの開発 (6) ローカルスクリプトの作成
 
-本製品「センサーコミュニケーション基板」を通してセンサーや出力装置が接続された、手元のRaspberry Pi上で動作させる制御用ローカルスクリプトの設計方針と、開発作業の準備に必要な手順を説明します。
+本製品「IoTスマートスピーカーモジュール」を通してセンサーや出力装置が接続された、手元のRaspberry Pi上で動作させる制御用ローカルスクリプトの設計方針と、開発作業の準備に必要な手順を説明します。
 
 ## ローカルスクリプトの機能
 
@@ -15,13 +15,13 @@
 
 ## 事前準備
 
-以下の作業を開始する前に、**Raspberry Piにセンサーコミュニケーション基板を接続**してください。
+以下の作業を開始する前に、**Raspberry PiにIoTスマートスピーカーモジュールを接続**してください。
 
 ![基板写真](https://raw.githubusercontent.com/kyohritsu/KP-RSCSP/master/docs/assets/board.jpg)
 
 ## GrovePi ソフトウェアのセットアップ
 
-「センサーコミュニケーション基板」のセンサー接続インターフェースは、Seeed Studio 製 [GrovePi+](http://wiki.seeedstudio.com/GrovePi_Plus/) 互換となっています。インターフェースAVRマイコンのファームウェアや、各プログラミング言語向けのGroveモジュール制御用ライブラリソフトウェアは、GrovePiが提供するものを利用します。
+「IoTスマートスピーカーモジュール」のセンサー接続インターフェースは、Seeed Studio 製 [GrovePi+](http://wiki.seeedstudio.com/GrovePi_Plus/) 互換となっています。インターフェースAVRマイコンのファームウェアや、各プログラミング言語向けのGroveモジュール制御用ライブラリソフトウェアは、GrovePiが提供するものを利用します。
 
 GrovePi ソフトウェア
   - https://github.com/DexterInd/GrovePi

@@ -24,6 +24,7 @@
 
 ### ハードウェア
 
+  - Raspberry Pi 3 Model B+
   - Raspberry Pi 3 Model B
   - Raspberry Pi Model B+
   - Raspberry Pi Zero W / WH
