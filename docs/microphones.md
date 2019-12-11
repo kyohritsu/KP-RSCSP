@@ -218,6 +218,41 @@ card 1: sndrpisimplecar [snd_rpi_simple_card], device 0: simple-card_codec_link 
 ~$ arecord -D plughw:1,0 -c1 -r 48000 -f S32_LE -t wav -V mono -v file.wav
 ```
 
+再生します。
+```sh
+~$ aplay -l
+```
+
+出力例は下記のようになります。この場合は、カード番号**0**、デバイス番号**0**で認識されています。
+
+```text
+**** ハードウェアデバイス PLAYBACK のリスト ****
+カード 0: ALSA [bcm2835 ALSA], デバイス 0: bcm2835 ALSA [bcm2835 ALSA]
+  サブデバイス: 7/7
+  サブデバイス #0: subdevice #0
+  サブデバイス #1: subdevice #1
+  サブデバイス #2: subdevice #2
+  サブデバイス #3: subdevice #3
+  サブデバイス #4: subdevice #4
+  サブデバイス #5: subdevice #5
+  サブデバイス #6: subdevice #6
+カード 0: ALSA [bcm2835 ALSA], デバイス 1: bcm2835 IEC958/HDMI [bcm2835 IEC958/HDMI]
+  サブデバイス: 1/1
+  サブデバイス #0: subdevice #0
+カード 0: ALSA [bcm2835 ALSA], デバイス 2: bcm2835 IEC958/HDMI1 [bcm2835 IEC958/HDMI1]
+  サブデバイス: 1/1
+  サブデバイス #0: subdevice #0
+カード 1: sndrpisimplecar [snd_rpi_simple_card], デバイス 0: simple-card_codec_link snd-soc-dummy-dai-0 [simple-card_codec_link snd-soc-dummy-dai-0]
+  サブデバイス: 1/1
+  サブデバイス #0: subdevice #0
+```
+
+録音した音を再生します。
+
+```sh
+~$ aplay -D plughw:0,0 file.wav
+```
+
 ステレオ録音を行う場合は下記のコマンドを使います。
 
 ```sh
