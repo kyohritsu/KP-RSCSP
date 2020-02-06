@@ -12,7 +12,7 @@
 
 Raspberry Pi上のシステムセットアップ方法を説明します。
 
-対象LinuxディストリビューションはRaspbianです。(Raspbian Stretch with Desktop および Raspbian Stretch Lite 2018-03-14 で動作確認済み)
+対象LinuxディストリビューションはRaspbianです。(2019-09-26-raspbian-buster で動作確認済み)
 
   - 以下のセットアップ手順に関する説明は、下記文書の情報を基にして作成されています。  
     [Adafruit Learning System: I2S MEMS Microphone Breakout - Raspberry Pi Wiring & Test](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/raspberry-pi-wiring-and-test)
@@ -37,7 +37,7 @@ MEMSマイクを接続するI2Sインターフェースは初期状態で無効�
 次に、Raspberry Piが搭載するチップセット内蔵のサウンド機能を有効化します。再び nano を実行し、設定ファイルを開きます。
 
 ```sh
-~$ sudo nano /etc/modules.txt
+~$ sudo nano /etc/modules
 ```
 
 ファイルの末尾に `snd-bcm2835` という行を追加し、上書き保存してから終了します。完了後、再起動します。
@@ -77,7 +77,7 @@ MEMSマイクを接続するI2Sインターフェースは初期状態で無効�
 カーネルの取得・コンパイルに必要となる依存パッケージをインストールします。
 
 ```sh
-~$ sudo apt install git bc libncurses5-dev
+~$ sudo apt install git bc libncurses5-dev bison flex libssl-dev
 ```
 
 Linuxカーネルのダウンローダー `rpi-source` を取得し、実行して最新版のビルド済みカーネルをダウンロードします。
@@ -93,6 +93,10 @@ Linuxカーネルのダウンローダー `rpi-source` を取得し、実行し�
 
 ```sh
 ~$ rm linux-*.tar.gz
+~$ rm -R linux-*
+~$ sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
+~$ sudo chmod +x /usr/bin/rpi-source
+~$ /usr/bin/rpi-source -q --tag-update
 ~$ rpi-source --skip-gcc
 ```
 
@@ -109,7 +113,7 @@ I2S サウンドモジュールのコンパイル前に、Linuxカーネル上�
 次のコマンドを実行し、実行結果の中に下記の行が含まれていれば、問題なく準備ができています。
 
 ```sh
-~$ sudo cat /sys/kernel/debug/asoc/platforms
+~$ sudo cat /sys/kernel/debug/asoc/components
 ```
 
 ```text
@@ -212,6 +216,41 @@ card 1: sndrpisimplecar [snd_rpi_simple_card], device 0: simple-card_codec_link 
 
 ```sh
 ~$ arecord -D plughw:1,0 -c1 -r 48000 -f S32_LE -t wav -V mono -v file.wav
+```
+
+再生します。
+```sh
+~$ aplay -l
+```
+
+出力例は下記のようになります。この場合は、カード番号**0**、デバイス番号**0**で認識されています。
+
+```text
+**** ハードウェアデバイス PLAYBACK のリスト ****
+カード 0: ALSA [bcm2835 ALSA], デバイス 0: bcm2835 ALSA [bcm2835 ALSA]
+  サブデバイス: 7/7
+  サブデバイス #0: subdevice #0
+  サブデバイス #1: subdevice #1
+  サブデバイス #2: subdevice #2
+  サブデバイス #3: subdevice #3
+  サブデバイス #4: subdevice #4
+  サブデバイス #5: subdevice #5
+  サブデバイス #6: subdevice #6
+カード 0: ALSA [bcm2835 ALSA], デバイス 1: bcm2835 IEC958/HDMI [bcm2835 IEC958/HDMI]
+  サブデバイス: 1/1
+  サブデバイス #0: subdevice #0
+カード 0: ALSA [bcm2835 ALSA], デバイス 2: bcm2835 IEC958/HDMI1 [bcm2835 IEC958/HDMI1]
+  サブデバイス: 1/1
+  サブデバイス #0: subdevice #0
+カード 1: sndrpisimplecar [snd_rpi_simple_card], デバイス 0: simple-card_codec_link snd-soc-dummy-dai-0 [simple-card_codec_link snd-soc-dummy-dai-0]
+  サブデバイス: 1/1
+  サブデバイス #0: subdevice #0
+```
+
+録音した音を再生します。
+
+```sh
+~$ aplay -D plughw:0,0 file.wav
 ```
 
 ステレオ録音を行う場合は下記のコマンドを使います。
