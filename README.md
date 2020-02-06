@@ -7,7 +7,9 @@
 ![基板写真](https://raw.githubusercontent.com/kyohritsu/KP-RSCSP/master/docs/assets/board.jpg)
 
 ## 当リポジトリに含まれる内容
-  - [MEMSマイクの使用方法](https://github.com/kyohritsu/KP-RSCSP/blob/master/docs/microphones.md)
+  - MEMSマイクの使用方法
+    - [Raspbian Busterでの手順](https://github.com/kyohritsu/KP-RSCSP/blob/master/docs/microphones.md)
+    - [Raspbian Stretchでの手順](https://github.com/kyohritsu/KP-RSCSP/blob/master/docs/microphones_stretch.md)
   - [赤外線リモコンインターフェースの使用方法](https://github.com/kyohritsu/KP-RSCSP/blob/master/docs/ir_transceiver.md)
   - 応用事例説明文書：アシスタントアプリの開発
     1. [はじめに](https://github.com/kyohritsu/KP-RSCSP/blob/master/docs/doc01_introduction.md)
